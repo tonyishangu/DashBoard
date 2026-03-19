@@ -12,10 +12,12 @@ const Sidebar = () => {
         {" "}
         ☰{" "}
       </button>
-      <nav className="mt-5 space-y-4">
+      <ul className="mt-5 space-y-4">
+        <li>
         <Link to="/" className="flex items-center gap-3 px-4">
           <FaChartBar /> {open && "Dashboard"}
         </Link>
+        </li>
 
         <Link to="/users" className="flex items-center gap-3 px-4">
           <FaUsers /> {open && "Users"}
@@ -24,7 +26,7 @@ const Sidebar = () => {
         <Link to="/settings" className="flex items-center gap-3 px-4">
           <FaCog /> {open && "Settings"}
         </Link>
-      </nav>
+      </ul>
     </div>
   );
 };
